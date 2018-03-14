@@ -5,6 +5,7 @@ import Posts from './comps/Posts';
 import ViewPost from './comps/ViewPost';
 import NewPost from './comps/NewPost';
 import NoMatch from './comps/NoMatch';
+import FetchPosts from './comps/FetchPosts'
 import image from './comps/image.png'
 
 const styles = {
@@ -18,8 +19,7 @@ const App = () => (
   <section style={ styles }>
     <Switch>
       <Route exact path="/" component={ Home } />
-      <Route path="/posts" component={ Posts } />
-      <Route path='/posts/new' component={ NewPost } />
+      <Route path="/posts" component={ FetchPosts } />
       <Route component={ NoMatch } />
     </Switch>
   </section>
